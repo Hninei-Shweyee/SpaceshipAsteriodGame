@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.invaders.controller.menuController">
+   <children>
+      <ImageView fitHeight="402.0" fitWidth="603.0">
+         <image>
+<!--            <Image url="@com/example/invaders/assets/91656.jpg" />-->
+            <Image url="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnR0aXk2NWZhOXk2Y3UxNW5ybHlzNHVnNmRsM24zeHZtaGNoNTUxNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/rNo8kmBgryGkHiePgZ/giphy.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="141.0" layoutY="33.0" text="Choose your player" textFill="red">
+         <font>
+            <Font name="Agency FB Bold" size="48.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="playerImg1" fitHeight="150.0" fitWidth="150.0" layoutX="78.0" layoutY="155.0" onMouseClicked="#addPlayer" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@com/example/invaders/assets/player1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="playerImg2" fitHeight="150.0" fitWidth="150.0" layoutX="249.0" layoutY="155.0" onMouseClicked="#addPlayer" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@com/example/invaders/assets/player2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="playerImg3" fitHeight="130.0" fitWidth="148.0" layoutX="413.0" layoutY="165.0" onMouseClicked="#addPlayer">
+         <image>
+            <Image url="@com/example/invaders/assets/player3.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="117.0" layoutY="305.0" text="Emerald" textFill="red">
+         <font>
+            <Font name="Agency FB Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="284.0" layoutY="305.0" text="Juu" textFill="red">
+         <font>
+            <Font name="Agency FB Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="469.0" layoutY="305.0" text="Zanz" textFill="red">
+         <font>
+            <Font name="Agency FB Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
